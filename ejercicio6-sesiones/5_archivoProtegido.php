@@ -1,0 +1,19 @@
+<?php 
+// SE INCLUYE EL ARCHIVO EN DONDE SE INICIA LA SESIÓN Y ADEMÁS LA REDIRECCIÓN
+
+include('4_sesion.php');
+
+echo $_SESSION['usuario'];
+?>
+
+
+<br><a href="5_archivoProtegido2.php">Otra página</a>
+<br><a href="3_salir.php">Salir</a>
+
+
+<!-- IMPORTANTE == SIN EL INCLUDE, QUE CONTIENE UNA REDIRECCIÓN PARA ELIMINAR LA SESIÓN, SE PUEDE INGRESAR YA QUE
+EL LINK <a> AL PARECER NO ES CAPAZ DE ELIMINAR UNA SESIÓN, MIENTRAS QUE CON UNA REDIRECCIÓN SÍ ES POSIBLE
+    "APARENTEMENTE" -->
+
+
+
